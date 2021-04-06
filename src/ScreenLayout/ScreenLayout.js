@@ -1,104 +1,41 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, SafeAreaView} from 'react-native';
+import styles from '../ScreenLayout/style';
 
 const ScreenLayout = () => {
   return (
     <>
-      <View style={{borderWidth: 3, borderColor: 'black'}}>
-        <Text
-          style={{
-            fontSize: 30,
-            borderWidth: 10,
-            borderColor: 'red',
-            margin: 20,
-            textAlign: 'center',
-            paddingTop: 20,
-          }}>
-          Jahnavi
-        </Text>
-      </View>
+      <SafeAreaView>
+        <View style={styles.view1}>
+          <Text style={styles.redText}>Jahnavi</Text>
+        </View>
 
-      <View
-        style={{
-          borderWidth: 3,
-          marginTop: 10,
-          borderColor: 'black',
-          alignItems: 'flex-start',
-        }}>
-        <Text
-          style={{
-            fontSize: 20,
-            borderWidth: 5,
-            borderColor: 'green',
-            textAlign: 'center',
-            paddingTop: 10,
-          }}>
-          Jahnavi
-        </Text>
-        <Text
-          style={{
-            fontSize: 20,
-            borderWidth: 5,
-            borderColor: 'orange',
-            textAlign: 'center',
-            paddingTop: 10,
-          }}>
-          Jahnavi
-        </Text>
-        <Text
-          style={{
-            fontSize: 20,
-            borderWidth: 5,
-            borderColor: 'blue',
-            textAlign: 'center',
-            paddingTop: 10,
-          }}>
-          Jahnavi
-        </Text>
-      </View>
+        <View style={styles.view2}>
+          <Text style={styles.greenText}>Jahnavi</Text>
+          <Text style={styles.orangeText}>Jahnavi</Text>
+          <Text style={styles.blueText}>Jahnavi</Text>
+        </View>
 
-      <View
-        style={{
-          borderWidth: 3,
-          marginTop: 10,
-          borderColor: 'black',
-          alignItems: 'flex-end',
-        }}>
-        <Text
-          style={{
-            fontSize: 20,
-            borderWidth: 5,
-            borderColor: 'green',
-            textAlign: 'center',
-            paddingTop: 10,
-          }}>
-          Jahnavi
-        </Text>
-        <Text
-          style={{
-            fontSize: 20,
-            borderWidth: 5,
-            borderColor: 'orange',
-            textAlign: 'center',
-            paddingTop: 10,
-          }}>
-          Jahnavi
-        </Text>
-        <Text
-          style={{
-            fontSize: 20,
-            borderWidth: 5,
-            borderColor: 'blue',
-            textAlign: 'center',
-            paddingTop: 10,
-          }}>
-          Jahnavi
-        </Text>
-      </View>
+        <View style={styles.view4}>
+          <Text style={styles.greenText}>Jahnavi</Text>
+          <Text style={styles.orangeText}>Jahnavi</Text>
+          <Text style={styles.blueText}>Jahnavi</Text>
+        </View>
+
+        <View style={styles.view5}>
+          <Text style={styles.greenText}>Jahnavi</Text>
+          <Text style={styles.orangeText}>Jahnavi</Text>
+          <Text style={styles.blueText}>Jahnavi</Text>
+        </View>
+
+        <View style={styles.view3}>
+          <Text style={styles.greenText}>Jahnavi</Text>
+          <Text style={styles.orangeText}>Jahnavi</Text>
+          <Text style={styles.blueText}>Jahnavi</Text>
+        </View>
+      </SafeAreaView>
     </>
   );
 };
-
-const styles = StyleSheet.create({});
 
 export default ScreenLayout;
